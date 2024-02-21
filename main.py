@@ -30,7 +30,7 @@ def motion_detection():
         for c in countours:
             #area - remove small elements
             area = cv2.contourArea(c)
-            if area > 500:
+            if area > 100:
                 # cv2.drawContours(frame, [c], -1, (0, 255, 0), 2)
                 x, y, w, h = cv2.boundingRect(c)
                 cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 3)
