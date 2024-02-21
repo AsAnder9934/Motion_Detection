@@ -1,8 +1,6 @@
 
 import cv2
 import time
-import datetime
-import imutils
 import numpy as np
 from tracker import *
 
